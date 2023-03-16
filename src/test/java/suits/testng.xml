@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"></listener>
+        <listener class-name="listeners.ScreenshotListener"></listener>
+    </listeners>
+    <suite-files>
+        <!--<suite-file path="loginTestsuite.xml"></suite-file>-->
+        <suite-file path="userLoggedinsuite.xml"></suite-file>
+    </suite-files>
+</suite>

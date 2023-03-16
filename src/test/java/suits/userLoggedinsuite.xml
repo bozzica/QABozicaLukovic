@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="functionalities of logged in user" parallel="classes" thread-count="4">
+    <parameter name="username" value="standard_user"></parameter>
+    <parameter name="browser" value="chrome"></parameter>
+    <test name="Logged in user">
+        <classes>
+            <class name="testsWithLogin.LogoutTest"></class>
+            <!--
+      <class name="testsWithLogin.RemoveFromCartTest"></class>
+            <class name="testsWithLogin.CompareItemNameTest"></class>-->
+        </classes>
+    </test>
+</suite>
